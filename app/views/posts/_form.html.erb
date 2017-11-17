@@ -23,16 +23,7 @@
     <%= f.collection_check_boxes :tag_ids, Tag.all, :id, :name %><br>
   </div>
 
-  <h3> Or create new tag </h3>
 
-  <%= form_for (@tag) do |f| %>
-
-    <div class="field">
-      <%= f.label :name %><br>
-      <%= f.text_field :name %><br>
-    </div>
-
-    <% end %>
 
   <div class="actions">
     <%= f.submit %>
