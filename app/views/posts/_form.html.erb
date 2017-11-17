@@ -24,11 +24,11 @@
   </div>
 
   <h3> Or make a new tag </h3>
-
+  <div class="field">
     <%= fields_for :tag, @post.tags do |tag_fields| %>
       Name: <%= tag_fields.text_field :name %>
     <% end %>
-
+  </div>
 
   <div class="actions">
     <%= f.submit %>
