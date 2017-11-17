@@ -26,7 +26,7 @@
   <h3> Or make a new tag </h3>
   
   <div class="field">
-    <%= fields_for :tags, @post.tags do |tag_fields| %>
+    <%= f.fields_for :tags, @post.tags do |tag_fields| %>
       <%= tag_fields.label :name %><br>
       <%= tag_fields.text_field :name %>
     <% end %>
