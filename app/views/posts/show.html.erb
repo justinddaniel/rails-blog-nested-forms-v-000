@@ -7,7 +7,7 @@
   <%= @post.content %>
   <h3>Tags:</h3>
 
-  <p> <%= @post.tags %> </p>
+  <p> <%= post_params %> </p>
   <ul>
     <% @post.tags.each do |tag| %>
     <li><%= tag.name %></li>
