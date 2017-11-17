@@ -27,6 +27,7 @@ class PostsController < ApplicationController
   def create
     raise post_params.inspect
     @post = Post.new(post_params)
+    @tags = @post.tags.build
     respond_to do |format|
       if @post.save
         format.html { redirect_to @post, notice: 'Post was successfully created.' }
